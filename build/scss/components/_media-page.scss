@@ -1,0 +1,369 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .page-main__big-sect {
+	    width: 662px;
+	}
+	.iterview__item-title h3 {
+	    font-size: 14px;
+	}
+    .questions__item {
+        padding: 30px 100px 30px 120px;
+    }
+    .review__item {
+		padding: 15px 0;
+	}
+	.review__item-img {
+		width: 100px
+	}
+	.review__item-date {
+	    margin: 0 0 0 115px;
+	}
+	.review__item-title {
+	    margin: 10px 0 0 115px;
+		h3 {
+			font-size: 11px;
+		}
+	}
+	.review__item-events {
+	    margin: 10px 0 0 115px;
+	}
+    .rating {
+        td {
+            font-size: 11px;
+        }
+        img {
+            width: 30px;
+        }
+        td:first-child {
+            padding-left: 10px;
+        }
+        tr:nth-child(2) td,
+        tr:nth-child(3) td,
+        tr:nth-child(4) td {
+            font-size: 12px;
+        }
+        tr:nth-child(2) td:first-child,
+        tr:nth-child(3) td:first-child,
+        tr:nth-child(4) td:first-child {
+            font-size: 16px;
+            span {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+    .vacancy__opened-item-link {
+        width: 175px;
+        font-size: 11px;
+        a {
+            padding: 10px 20px;
+        }
+    }
+    .vacancy__opened-item-clarification {
+        width: 350px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .widget, .our-projects {
+        display: none;
+    }
+    .page-main__big-sect {
+	    width: auto;
+	}
+    .pagination {
+        margin: 0;
+    }
+    .news {
+        padding: 0;
+    }
+    .questions {
+        padding: 0;
+    }
+    .vacancy {
+        padding: 0;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .page-header__links {
+
+        font-weight: 500;
+        a {
+            font-size: 12px;
+            padding: 5px 10px;
+            &:after {
+                bottom: 5px;
+                left: 10px;
+                right: 10px;
+            }
+        }
+    }
+    .questions__item {
+        padding: 30px 30px 30px 120px;
+    }
+    .questions__item-events {
+        position: static;
+    }
+    .questions__item-comments,
+    .questions__item-views {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .questions__item-comments {
+        margin-bottom: 0;
+    }
+    .rating {
+        th, td {
+            padding-right: 8px;
+        }
+        th {
+            font-size: 9px;
+        }
+        td {
+            padding: 10px 8px 10px 0;
+            font-weight: 400;
+        }
+        img {
+            margin-right: 10px;
+        }
+        td:first-child {
+            padding-left: 0;
+            text-align: left;
+        }
+        tr:nth-child(2) td,
+        tr:nth-child(3) td,
+        tr:nth-child(4) td {
+            font-weight: 600;
+        }
+        tr:nth-child(2) td:first-child,
+        tr:nth-child(3) td:first-child,
+        tr:nth-child(4) td:first-child {
+            font-size: 12px;
+            span {
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+    .table-width-col-100 {
+        width: 30px;
+    }
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 640px) {
+    .iterview__item {
+        width: 48%;
+        margin: 0 1% 30px 1%;
+    }
+    .pagination {
+        height: 50px;
+        line-height: 50px;
+    }
+    .pagination__prev, .pagination__next {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+    .pagination__item {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+    }
+    .news__item-title {
+        margin: 0 0 15px 90px;
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .news__item-events {
+        margin: 15px 0 0 90px;
+    }
+    .questions__item {
+        padding: 20px 20px 20px 100px;
+    }
+    .questions__item-img {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .questions__item-name {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    .questions__item-date {
+        display: block;
+    }
+    .questions__item-title {
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .review {
+        display: block;
+    }
+    .review__item {
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+    .review__item:nth-child(2) {
+       border-top: 1px solid #ccc;
+   }
+   .vacancy__advantages-item {
+       padding: 0 0 0 90px;
+   }
+   .vacancy__opened-item-link {
+       margin: 0 0 20px 0;
+       float: none;
+       width: auto;
+       text-align: center;
+   }
+   .vacancy__opened-item-clarification {
+       float: none;
+       width: auto;
+       margin: 20px 0 0 0;
+       text-align: center;
+   }
+   .vacancy__opened-item-title {
+        padding: 20px 60px 20px 90px;
+       &:before {
+            left: 30px;
+        }
+   }
+   .vacancy__opened-item-name {
+        font-size: 16px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .iterview__item-title h3 {
+	    font-size: 12px;
+        font-weight: 600;
+	}
+    .news__item-title {
+        h3 {
+            font-size: 14px;
+        }
+    }
+    .questions__item-title {
+        h3 {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    .questions__item-img {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .questions__item {
+        padding: 10px 10px 10px 75px;
+    }
+    .vacancy__advantages-item-text {
+        font-size: 13px;
+    }
+    .vacancy__opened-title {
+        text-align: center;
+        h3 {
+            font-size: 22px;
+        }
+    }
+    .vacancy__opened-item-title {
+        &:before {
+            left: 10px;
+        }
+        &:after {
+            right: 15px;
+            top: 35px;
+            font-size: 16px;
+        }
+        padding: 20px 40px 20px 60px;
+    }
+    .vacancy__opened-item-name {
+        font-size: 14px;
+    }
+    .vacancy__opened-item-box {
+        padding: 0 10px 20px;
+    }
+    .vacancy__opened-item-text {
+
+        font-size: 13px;
+
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}

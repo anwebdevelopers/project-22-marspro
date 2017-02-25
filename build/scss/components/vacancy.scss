@@ -1,0 +1,214 @@
+.page-header_vacancy_bg {
+    min-height: 270px;
+    background-color: #3a5456;
+    background-image: url(../img/vacancy-header-bg.jpg);
+}
+.vacancy {
+    padding: 0 30px 0 0;
+}
+.vacancy__advantages {
+    margin: 0 0 50px 0;
+}
+.vacancy__advantages-item {
+    position: relative;
+    padding: 0 0 0 110px;
+    margin: 0 0 30px 0;
+}
+.vacancy__advantages-item-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.vacancy__advantages-item-title {
+    margin: 0 0 15px 0;
+    padding: 5px 0 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Stem';
+}
+.vacancy__advantages-item-text {
+    margin: 15px 0 0 0;
+    font-size: 15px;
+    line-height: 1.4;
+    p {
+        margin: 0;
+    }
+}
+.vacancy__opened {
+
+}
+.vacancy__opened-title {
+    margin: 0 0 60px 0;
+    text-transform: uppercase;
+    font-family: 'Stem';
+    h3 {
+        margin: 0;
+        font-size: 26px;
+    }
+}
+.vacancy__opened-item {
+    margin: 0 0 30px 0;
+    background-color: #fff;
+    box-shadow: 0 10px 30px -10px #666;
+}
+.vacancy__opened-item-title {
+    position: relative;
+    padding: 20px 80px 20px 120px;
+    cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 45px;
+        top: 25px;
+        width: 36px;
+        height: 34px;
+        background-image: url(../img/icon-bag.png);
+        background-repeat: no-repeat;
+    }
+    &:after {
+        position: absolute;
+        right: 30px;
+        top: 35px;
+        content: '\e807';
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        text-decoration: inherit;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #888;
+        transform: rotate(-90deg);
+        font-size: 20px;
+        transition: transform .3s ease;
+    }
+}
+.vacancy__opened-item.open {
+    .vacancy__opened-item-title {
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+}
+.vacancy__opened-item-date {
+    margin: 0 0 5px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    b {
+        color: #888;
+    }
+}
+.vacancy__opened-item-name {
+    margin: 5px 0 0 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+.vacancy__opened-item-box {
+    @extend .clearfix;
+    display: none;
+    padding: 0 30px 30px 30px;
+}
+.vacancy__opened-item-text {
+    padding: 20px 0 ;
+    margin:  0 0 20px 0;
+    border-top: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 1.4;
+    p {
+        margin: 0;
+    }
+}
+.vacancy__opened-item-link {
+    float: left;
+    width: 255px;
+    font-size: 13px;
+    font-family: 'Stem';
+    text-transform: uppercase;
+    font-weight: 600;
+    a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 12px 50px;
+        border: 2px solid $pink;
+        text-decoration: none;
+        background-color: $pink;
+        color: #fff;
+        border-radius: 30px;
+        transition: color .3s ease, background-color .3s ease;
+        &:hover, &:active, &:focus {
+            background-color: #fff;
+            color: $pink;
+        }
+    }
+}
+.vacancy__opened-item-clarification {
+    float: right;
+    width: 450px;
+    font-size: 12px;
+    p {
+        margin: 0;
+    }
+}
+
+.our-projects {
+    position: relative;
+    top: -180px;
+    padding: 35px;
+    background-color: #fff;
+}
+.our-projects__link {
+    margin: 0 0 40px 0;
+    p {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+    }
+    a {
+        font-size: 20px;
+        color: $orange;
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+    }
+}
+.our-projects__title {
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    font-family: 'Stem';
+    h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+.our-projects__item {
+    margin: 0 0 40px 0;
+}
+.our-projects__item-img {
+    margin: 0 0 20px 0;
+    img {
+        max-width: 100%;
+    }
+}
+.our-projects__item-text {
+    margin: 20px 0 0 0;
+    line-height: 1.4;
+    font-size: 13px;
+    p {
+        margin: 15px 0;
+    }
+}

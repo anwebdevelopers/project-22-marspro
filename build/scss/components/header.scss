@@ -1,0 +1,207 @@
+@import "bourbon";
+
+.header {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 40px 0 #aaa;
+}
+.header__wrapper {
+    position: relative;
+    @extend .clearfix;
+    @extend .container;
+}
+.header__top-line {
+    position: relative;
+    padding: 12px 0;
+    background-color: $pink;
+    background-image: url(../img/main-topline-bg.jpg);
+    background-size: cover;
+    background-position: center 0;
+}
+
+.header__top-line-nav {
+    margin: 0 0 0 110px;
+    float: left;
+    max-width: 750px;
+    font-family: 'Stem';
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 13px;
+        display: flex;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            padding: 3px 10px;
+            a {
+                position: relative;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    right: 50%;
+                    bottom: 0;
+                    height: 1px;
+                    background-color: transparentize(#fff, .5);
+                    transition: all .3s ease;
+                }
+                &:hover, &:active, &:focus {
+                    &:after {
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__top-line-search {
+    position: relative;
+    float: right;
+}
+.header__top-line-search-button {
+    position: absolute;
+    right: 20px;
+    top: -2px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform .3s ease;
+    &:hover, &:active, &:focus {
+        transform: scale(1.2);
+    }
+}
+.header__top-line-search-form {
+    display: none;
+    position: relative;
+    z-index: 1;
+    font-size: 0;
+    input {
+        width: 200px;
+        height: 24px;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        padding: 2px 10px;
+        color: #fff;
+        font-size: 13px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparentize(#fff, .5);
+        border-right: none;
+        outline: none;
+        transition: border-color .3s ease;
+        &:focus {
+            border-color: transparentize(#fff, .1);
+        }
+    }
+    button {
+        height: 24px;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 1;
+        background-color: transparentize(#fff, .8);
+        border: 1px solid transparentize(#fff, .5);
+        outline: none;
+        transition: border-color .3s ease;
+        &:hover, &:active, &:focus {
+            border-color: transparentize(#fff, .1);
+            background-color: transparentize(#fff, .6);
+        }
+    }
+}
+
+.header__bottom-line {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header__logo {
+    float: left;
+    margin: -15px 0 -17px -10px;
+    img {
+        width: 237px;
+        height: 106px;
+    }
+}
+.header__nav {
+    float: right;
+    max-width: 900px;
+    padding: 30px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Stem';
+    .icon-home-outline {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        height: 19px;
+        width: 25px;
+
+        &:before {
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                display: block;
+                padding: 0 8px;
+                position: relative;
+                color: #3c3d41;
+                text-decoration: none;
+                transition: color .3s ease;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    right: 50%;
+                    bottom: -10px;
+                    height: 3px;
+                    background-color: $pink;
+                    transition: all .3s ease;
+                }
+                &:hover, &:active, &:focus {
+                    color: $pink;
+                    &:after {
+                        left: 8px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+        .active {
+            a {
+                color: $pink;
+                &:after {
+                    left: 8px;
+                    right: 8px;
+                }
+            }
+        }
+    }
+}
+.header__nav-button {
+    display: none;
+    font-size: 24px;
+    color: #535353;
+}

@@ -1,0 +1,132 @@
+.page-header_review_bg {
+    background-color: #784f91;
+    background-image: url(../img/review-header-bg.jpg);
+}
+.review {
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 40px 0;
+
+}
+.review__item {
+    @extend .clearfix;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin: 0 3% 0 0;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    border-top: 1px solid #ccc;
+    &:hover {
+        .review__item-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        .review__item-title {
+            color: $orange;
+        }
+    }
+}
+.review__item:nth-child(1), .review__item:nth-child(2) {
+    border: none;
+}
+.review__item-img {
+    float: left;
+    width: 122px;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform .3s ease;
+    }
+}
+.review__item-date {
+    margin: 0 0 0 145px;
+    position: relative;
+    padding: 0 0 0 25px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    &:before {
+        content: '\e803';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        text-decoration: inherit;
+        width: 1em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 14px;
+        color: $orange;
+    }
+}
+.review__item-title {
+    margin: 15px 0 0 145px;
+    color: #505050;
+    line-height: 1.4;
+    transition: color .3s ease;
+    h3 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+.review__item-events {
+    margin: 15px 0 0 145px;
+    line-height: 1;
+}
+.review__item-comments,
+.review__item-views {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 0 0 25px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        text-decoration: inherit;
+        width: 1em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        color: #bbb;
+    }
+}
+.review__item-comments {
+    margin-right: 15px;
+    &:before {
+        content: '\e804';
+        font-size: 13px;
+    }
+}
+.review__item-views {
+    &:before {
+        content: '\e805';
+        font-size: 15px;
+    }
+}
